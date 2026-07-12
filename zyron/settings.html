@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الإعدادات - Zyron</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Zyron</h1>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="explore.html">استكشاف</a>
+            <a href="messages.html">الرسائل</a>
+            <a href="profile.html">الملف الشخصي</a>
+            <a href="settings.html">الإعدادات</a>
+            <a href="index.html" id="logoutBtn">تسجيل الخروج</a>
+        </nav>
+    </header>
+
+
+    <main class="settings-page">
+
+
+        <section class="settings-box">
+
+
+            <h2>
+                ⚙️ الإعدادات
+            </h2>
+
+
+
+            <!-- الحساب -->
+
+            <div class="setting-section">
+
+                <h3>
+                    الحساب
+                </h3>
+
+
+                <label>
+                    الاسم
+
+                    <input
+                        type="text"
+                        id="settingName"
+                        placeholder="الاسم"
+                    >
+
+                </label>
+
+
+                <label>
+                    النبذة
+
+                    <textarea
+                        id="settingBio"
+                        placeholder="اكتب نبذة عنك"
+                    ></textarea>
+
+                </label>
+
+
+                <button id="saveProfileBtn">
+                    حفظ التغييرات
+                </button>
+
+
+            </div>
+
+
+
+            <!-- الخصوصية -->
+
+            <div class="setting-section">
+
+
+                <h3>
+                    الخصوصية
+                </h3>
+
+
+                <label class="switch-row">
+
+                    <span>
+                        الحساب خاص
+                    </span>
+
+
+                    <input
+                        type="checkbox"
+                        id="privateAccount"
+                    >
+
+                </label>
+
+
+            </div>
+
+
+
+            <!-- المظهر -->
+
+            <div class="setting-section">
+
+
+                <h3>
+                    المظهر
+                </h3>
+
+
+                <label class="switch-row">
+
+                    <span>
+                        الوضع الداكن
+                    </span>
+
+
+                    <input
+                        type="checkbox"
+                        id="darkMode"
+                    >
+
+                </label>
+
+
+            </div>
+
+
+
+            <!-- الحساب -->
+
+            <div class="setting-section danger">
+
+
+                <h3>
+                    إجراءات الحساب
+                </h3>
+
+
+                <button
+                    id="deleteAccountBtn"
+                >
+                    حذف الحساب
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Zyron
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+    <script src="settings.js"></script>
+
+
+</body>
+
+</html>

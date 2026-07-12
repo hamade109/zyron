@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الإشعارات - Zyron</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         الهيدر
+    ============================== -->
+
+    <header>
+
+        <h1>Zyron</h1>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="explore.html">استكشاف</a>
+            <a href="messages.html">الرسائل</a>
+            <a href="notifications.html">الإشعارات</a>
+            <a href="profile.html">الملف الشخصي</a>
+            <a href="index.html" id="logoutBtn">تسجيل الخروج</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ==============================
+         صفحة الإشعارات
+    ============================== -->
+
+    <main class="notifications-page">
+
+        <section class="notifications-container">
+
+            <!-- رأس الصفحة -->
+            <div class="notifications-header">
+
+                <div>
+                    <h2>الإشعارات</h2>
+
+                    <p>
+                        تابع آخر التفاعلات على حسابك
+                    </p>
+                </div>
+
+
+                <button
+                    type="button"
+                    id="markAllReadBtn"
+                >
+                    تحديد الكل كمقروء
+                </button>
+
+            </div>
+
+
+            <!-- ==============================
+                 التصنيفات
+            ============================== -->
+
+            <div class="notification-filters">
+
+                <button
+                    type="button"
+                    class="notification-filter active"
+                    data-filter="all"
+                >
+                    الكل
+                </button>
+
+                <button
+                    type="button"
+                    class="notification-filter"
+                    data-filter="unread"
+                >
+                    غير المقروءة
+                </button>
+
+                <button
+                    type="button"
+                    class="notification-filter"
+                    data-filter="follow"
+                >
+                    المتابعات
+                </button>
+
+                <button
+                    type="button"
+                    class="notification-filter"
+                    data-filter="like"
+                >
+                    الإعجابات
+                </button>
+
+                <button
+                    type="button"
+                    class="notification-filter"
+                    data-filter="comment"
+                >
+                    التعليقات
+                </button>
+
+                <button
+                    type="button"
+                    class="notification-filter"
+                    data-filter="message"
+                >
+                    الرسائل
+                </button>
+
+            </div>
+
+
+            <!-- ==============================
+                 قائمة الإشعارات
+            ============================== -->
+
+            <div
+                class="notifications-list"
+                id="notificationsList"
+            >
+
+                <!--
+                    سيتم إنشاء الإشعارات
+                    تلقائياً بواسطة notifications.js
+                -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         الفوتر
+    ============================== -->
+
+    <footer>
+        <p>© 2026 Zyron</p>
+    </footer>
+
+
+    <!-- ==============================
+         JavaScript
+    ============================== -->
+
+    <script src="script.js"></script>
+    <script src="notifications.js"></script>
+
+</body>
+
+</html>

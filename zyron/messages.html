@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الرسائل - Zyron</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="messages.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Zyron</h1>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="explore.html">استكشاف</a>
+            <a href="messages.html">الرسائل</a>
+            <a href="profile.html">الملف الشخصي</a>
+            <a href="index.html" id="logoutBtn">تسجيل الخروج</a>
+        </nav>
+    </header>
+
+
+    <main class="messages-page">
+
+        <section class="messages-container">
+
+            <!-- قائمة المحادثات -->
+            <aside class="conversations-sidebar">
+
+                <div class="messages-header">
+                    <h2>الرسائل</h2>
+
+                    <input
+                        type="search"
+                        id="userSearch"
+                        placeholder="ابحث عن مستخدم..."
+                    >
+                </div>
+
+                <div
+                    class="conversations-list"
+                    id="conversationsList"
+                >
+                    <!-- يتم إنشاء المحادثات بواسطة messages.js -->
+                </div>
+
+            </aside>
+
+
+            <!-- المحادثة -->
+            <section class="chat-section">
+
+                <!-- رأس المحادثة -->
+                <div
+                    class="chat-header"
+                    id="chatHeader"
+                >
+                    <h3 id="chatUserName">
+                        اختر مستخدماً لبدء المحادثة
+                    </h3>
+
+                    <p id="chatUsername"></p>
+                </div>
+
+
+                <!-- الرسائل -->
+                <div
+                    class="chat-messages"
+                    id="chatMessages"
+                >
+                    <p class="empty-chat-message">
+                        اختر محادثة لعرض الرسائل.
+                    </p>
+                </div>
+
+
+                <!-- إرسال رسالة -->
+                <form
+                    class="message-form"
+                    id="messageForm"
+                >
+
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="اكتب رسالة..."
+                        autocomplete="off"
+                        disabled
+                    >
+
+                    <button
+                        type="submit"
+                        id="sendMessageBtn"
+                        disabled
+                    >
+                        إرسال
+                    </button>
+
+                </form>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Zyron</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="messages.js"></script>
+
+</body>
+
+</html>

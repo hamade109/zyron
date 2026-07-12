@@ -1,0 +1,219 @@
+/* ==============================
+   Zyron - User Profile CSS
+============================== */
+
+.user-profile-page {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   بطاقة المستخدم
+============================== */
+
+.user-profile-header {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==============================
+   صورة المستخدم
+============================== */
+
+.user-profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #eeeeee;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   الاسم
+============================== */
+
+#userProfileName {
+    margin: 10px 0 5px;
+    font-size: 26px;
+}
+
+
+/* ==============================
+   اسم المستخدم
+============================== */
+
+#userProfileUsername {
+    margin: 0 0 15px;
+    color: #777777;
+}
+
+
+/* ==============================
+   النبذة
+============================== */
+
+#userProfileBio {
+    margin: 15px auto;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   الإحصائيات
+============================== */
+
+.user-profile-statistics {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.user-profile-statistics div {
+    min-width: 100px;
+}
+
+.user-profile-statistics strong {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+
+/* ==============================
+   زر المتابعة
+============================== */
+
+#followUserBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#followUserBtn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   قسم المنشورات
+============================== */
+
+.user-posts-section {
+    margin-top: 30px;
+}
+
+.user-posts-section h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ==============================
+   بطاقة المنشور
+============================== */
+
+.user-profile-post {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.user-profile-post p {
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   الصور والفيديوهات
+============================== */
+
+.user-profile-post .post-media {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+
+/* ==============================
+   معلومات المنشور
+============================== */
+
+.user-post-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+    color: #777777;
+    flex-wrap: wrap;
+}
+
+
+/* ==============================
+   زر عرض المنشور
+============================== */
+
+.user-profile-post .open-post-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+/* ==============================
+   رسالة عدم وجود منشورات
+============================== */
+
+.empty-user-posts {
+    text-align: center;
+    padding: 30px;
+    color: #777777;
+}
+
+
+/* ==============================
+   الهواتف
+============================== */
+
+@media (max-width: 600px) {
+
+    .user-profile-page {
+        margin-top: 20px;
+        padding: 0 12px;
+    }
+
+    .user-profile-header {
+        padding: 20px 15px;
+    }
+
+    .user-profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-profile-statistics {
+        gap: 15px;
+    }
+
+}

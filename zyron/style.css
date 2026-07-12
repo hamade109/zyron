@@ -1,0 +1,231 @@
+/* ==============================
+   Zyron - Global Style
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    direction: rtl;
+}
+
+/* ==============================
+   Header
+================================ */
+
+header {
+    width: 100%;
+    min-height: 70px;
+    padding: 15px 40px;
+    background: #111827;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1,
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* ==============================
+   Main
+================================ */
+
+main {
+    padding: 40px;
+}
+
+/* ==============================
+   Buttons
+================================ */
+
+button,
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover,
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* ==============================
+   Index - Hero
+================================ */
+
+.hero {
+    min-height: 75vh;
+    text-align: center;
+}
+
+.hero > section:first-child {
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ==============================
+   Features
+================================ */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 30px;
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+/* ==============================
+   Splash Screen
+================================ */
+
+.splash {
+    min-height: 100vh;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.splash h1 {
+    margin-bottom: 15px;
+    font-size: 65px;
+}
+
+.splash p {
+    margin: 6px 0;
+}
+
+/* ==============================
+   Footer
+================================ */
+
+footer {
+    width: 100%;
+    padding: 20px;
+
+    background: #111827;
+    color: #ffffff;
+
+    text-align: center;
+}
+
+/* ==============================
+   Mobile
+================================ */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .splash h1 {
+        font-size: 50px;
+    }
+}

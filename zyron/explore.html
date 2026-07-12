@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>استكشاف - Zyron</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="explore.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Zyron</h1>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="explore.html">استكشاف</a>
+            <a href="profile.html">الملف الشخصي</a>
+            <a href="index.html" id="logoutBtn">تسجيل الخروج</a>
+        </nav>
+    </header>
+
+
+    <main class="explore-page">
+
+        <!-- ==============================
+             البحث
+        ============================== -->
+
+        <section class="explore-search">
+
+            <h2>استكشاف</h2>
+
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="ابحث عن مستخدمين أو منشورات..."
+                >
+
+                <button
+                    type="button"
+                    id="searchBtn"
+                >
+                    بحث
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             التصنيفات
+        ============================== -->
+
+        <section class="explore-categories">
+
+            <button
+                type="button"
+                class="category-btn active"
+                data-category="all"
+            >
+                الكل
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="users"
+            >
+                المستخدمون
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="posts"
+            >
+                المنشورات
+            </button>
+
+        </section>
+
+
+        <!-- ==============================
+             المحتوى الحقيقي
+        ============================== -->
+
+        <section
+            class="explore-content explore-grid"
+            id="exploreContent"
+        >
+
+            <!--
+                المستخدمون والمنشورات
+                سيتم عرضهم تلقائياً
+                بواسطة explore.js
+            -->
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Zyron</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="explore.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الملف الشخصي - Zyron</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Zyron</h1>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="profile.html">الملف الشخصي</a>
+            <a href="index.html" id="logoutBtn">تسجيل الخروج</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- معلومات المستخدم -->
+        <section>
+
+            <div>
+
+                <img
+                    src="https://via.placeholder.com/120"
+                    alt="الصورة الشخصية"
+                    id="profileImage"
+                >
+
+                <h2 id="profileName">اسم المستخدم</h2>
+
+                <p id="profileUsername">@username</p>
+
+                <p id="profileBio">
+                    مرحباً، هذا حسابي في منصة Zyron.
+                </p>
+
+                <button type="button" id="editProfileBtn">
+                    تعديل الملف الشخصي
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- الإحصائيات -->
+        <section>
+
+            <h2>الإحصائيات</h2>
+
+            <p>
+                المنشورات:
+                <span id="postsCount">0</span>
+            </p>
+
+            <p>
+                المتابعون:
+                <span id="followersCount">0</span>
+            </p>
+
+            <p>
+                يتابع:
+                <span id="followingCount">0</span>
+            </p>
+
+        </section>
+
+        <!-- منشورات المستخدم -->
+        <section>
+
+            <h2>المنشورات</h2>
+
+            <article id="profilePosts">
+                <p>لا توجد منشورات حالياً.</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Zyron</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+
+</body>
+
+</html>

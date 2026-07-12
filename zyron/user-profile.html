@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الملف الشخصي - Zyron</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user-profile.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         الهيدر
+    ============================== -->
+
+    <header>
+
+        <h1>Zyron</h1>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="explore.html">استكشاف</a>
+            <a href="profile.html">ملفي الشخصي</a>
+            <a href="index.html" id="logoutBtn">تسجيل الخروج</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ==============================
+         الصفحة
+    ============================== -->
+
+    <main class="user-profile-page">
+
+
+        <!-- ==============================
+             معلومات المستخدم
+        ============================== -->
+
+        <section class="user-profile-header">
+
+            <img
+                id="userProfileImage"
+                class="user-profile-image"
+                src=""
+                alt="صورة المستخدم"
+            >
+
+
+            <h2 id="userProfileName">
+                مستخدم Zyron
+            </h2>
+
+
+            <p id="userProfileUsername">
+                @user
+            </p>
+
+
+            <p id="userProfileBio">
+                مستخدم في Zyron
+            </p>
+
+
+            <!-- ==============================
+                 الإحصائيات
+            ============================== -->
+
+            <div class="user-profile-statistics">
+
+                <div>
+                    <strong id="userPostsCount">
+                        0
+                    </strong>
+
+                    <span>
+                        المنشورات
+                    </span>
+                </div>
+
+
+                <div>
+                    <strong id="userFollowersCount">
+                        0
+                    </strong>
+
+                    <span>
+                        المتابعون
+                    </span>
+                </div>
+
+
+                <div>
+                    <strong id="userFollowingCount">
+                        0
+                    </strong>
+
+                    <span>
+                        يتابع
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- ==============================
+                 زر المتابعة
+            ============================== -->
+
+            <button
+                type="button"
+                id="followUserBtn"
+            >
+                متابعة
+            </button>
+
+        </section>
+
+
+        <!-- ==============================
+             منشورات المستخدم
+        ============================== -->
+
+        <section class="user-posts-section">
+
+            <h2>
+                المنشورات
+            </h2>
+
+
+            <div id="userProfilePosts">
+
+                <!--
+                    منشورات المستخدم
+                    ستظهر هنا بواسطة
+                    user-profile.js
+                -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         الفوتر
+    ============================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Zyron
+        </p>
+
+    </footer>
+
+
+    <!-- ==============================
+         JavaScript
+    ============================== -->
+
+    <script src="script.js"></script>
+    <script src="user-profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+/* ==============================
+   Zyron - Home Page
+================================ */
+
+/* الصفحة الرئيسية */
+
+main {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 75vh;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr) 220px;
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* ==============================
+   القوائم الجانبية
+================================ */
+
+main > aside {
+    padding: 20px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+main > aside h3 {
+    margin-bottom: 18px;
+}
+
+
+/* القائمة */
+
+main > aside ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+main > aside ul li {
+    margin-bottom: 10px;
+}
+
+
+main > aside ul li a {
+    display: block;
+
+    padding: 12px;
+
+    color: #1f2937;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+main > aside ul li a:hover {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* ==============================
+   المحتوى الرئيسي
+================================ */
+
+main > section {
+    min-width: 0;
+}
+
+
+main > section > h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ==============================
+   زر إنشاء منشور
+================================ */
+
+.create-post-shortcut {
+    margin-bottom: 25px;
+}
+
+
+.create-post-btn {
+    display: block;
+
+    width: 100%;
+
+    padding: 15px 20px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.create-post-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   المنشورات
+================================ */
+
+.post,
+main > section article {
+    margin-bottom: 20px;
+
+    padding: 22px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+.post h3,
+main > section article h3 {
+    margin-bottom: 12px;
+
+    color: #111827;
+}
+
+
+.post p,
+main > section article p {
+    margin-bottom: 15px;
+
+    line-height: 1.8;
+
+    color: #374151;
+
+    word-break: break-word;
+}
+
+
+/* ==============================
+   صور وفيديو المنشورات
+================================ */
+
+.post-media {
+    display: block;
+
+    width: 100%;
+
+    max-height: 500px;
+
+    margin: 15px 0;
+
+    object-fit: contain;
+
+    background: #000000;
+
+    border-radius: 14px;
+}
+
+
+/* ==============================
+   أزرار المنشور
+================================ */
+
+.post-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.post-actions button {
+    flex: 1;
+
+    min-width: 110px;
+
+    padding: 10px 14px;
+
+    background: #f1f5f9;
+
+    color: #1f2937;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.post-actions button:hover {
+    background: #e2e8f0;
+
+    transform: translateY(-1px);
+}
+
+
+/* ==============================
+   التعليقات
+================================ */
+
+.comments-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+.comment {
+    padding: 12px 15px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    line-height: 1.6;
+
+    word-break: break-word;
+}
+
+
+.comment strong {
+    color: #2563eb;
+}
+
+
+.comment span {
+    color: #374151;
+}
+
+
+/* ==============================
+   رسالة عدم وجود منشورات
+================================ */
+
+.empty-posts-message {
+    padding: 30px;
+
+    background: #ffffff;
+
+    color: #6b7280;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ==============================
+   اقتراحات المتابعة
+================================ */
+
+main > aside:last-child p {
+    margin-top: 15px;
+
+    margin-bottom: 8px;
+}
+
+
+main > aside:last-child button {
+    width: 100%;
+
+    padding: 9px 12px;
+
+    margin-bottom: 10px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+main > aside:last-child button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==============================
+   الأجهزة اللوحية
+================================ */
+
+@media (max-width: 1000px) {
+
+    main {
+        grid-template-columns: 190px minmax(0, 1fr);
+    }
+
+
+    main > aside:last-child {
+        display: none;
+    }
+
+}
+
+
+/* ==============================
+   الجوال
+================================ */
+
+@media (max-width: 700px) {
+
+    main {
+        display: block;
+    }
+
+
+    main > aside:first-child {
+        margin-bottom: 20px;
+    }
+
+
+    main > aside:first-child ul {
+        display: flex;
+
+        gap: 8px;
+
+        overflow-x: auto;
+    }
+
+
+    main > aside:first-child ul li {
+        margin-bottom: 0;
+
+        flex-shrink: 0;
+    }
+
+
+    .post,
+    main > section article {
+        padding: 17px;
+    }
+
+
+    .post-actions {
+        flex-direction: column;
+    }
+
+
+    .post-actions button {
+        width: 100%;
+    }
+
+}
+/* ==============================
+   زر العودة لجميع المنشورات
+================================ */
+
+.back-to-posts {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 12px 18px;
+
+    background: #ffffff;
+    color: #2563eb;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.back-to-posts:hover {
+    background: #eff6ff;
+    transform: translateY(-2px);
+}
